@@ -1,25 +1,30 @@
 import React, { Component } from 'react';
 import { Container } from 'reactstrap';
+import { get } from 'lodash';
+
 import * as am4core from '@amcharts/amcharts4/core';
 import * as am4maps from '@amcharts/amcharts4/maps';
 import am4geodata_rd from '@amcharts/amcharts4-geodata/dominicanRepublicHigh';
 import am4themes_dark from '@amcharts/amcharts4/themes/dark';
 import am4themes_animated from '@amcharts/amcharts4/themes/animated';
+
 import data from './data.json';
-import _ from 'lodash';
+
+import ProvinceData from './ProvinceData';
+
 export default class MapsAmchats extends Component {
 	constructor(props) {
-		super();
+		super(props);
 		this.state = {
 			provinceName    : '',
 			provinceID      : '',
 			provinceWeather : '',
 			provinceSoil    : '',
-			provinceAgrop   : ''
+			provinceAgrop   : '',
+			_provinceData   : {}
 		};
-		this.renderProvince = this.renderProvince.bind(this);
-		this.mapData = this.mapData.bind(this);
 	}
+
 	componentDidMount() {
 		am4core.useTheme(am4themes_dark);
 		am4core.useTheme(am4themes_animated);
@@ -50,22 +55,7 @@ export default class MapsAmchats extends Component {
 		// polygonTemplate.tooltipText = '{name} Agrp: {soil.use.agrp} Temperatura: {weather.main.temp}';
 		polygonTemplate.tooltipText = '{name} Agrp: {soil.use.agrp} Temperatura: {agrop_use.production.rice}';
 		polygonTemplate.fill = am4core.color('#757575');
-		polygonTemplate.events.on(
-			'hit',
-			(ev) =>
-				this.setState((state) => {
-					return {
-						...state,
-						dataProvince    : ev.target._dataItem._dataContext,
-						provinceName    : ev.target._dataItem._dataContext.name,
-						provinceID      : ev.target._dataItem._dataContext.id,
-						provinceWeather : ev.target._dataItem._dataContext.weather,
-						provinceSoil    : ev.target._dataItem._dataContext.soil,
-						provinceAgrop   : ev.target._dataItem._dataContext.agrop_use
-					};
-				}),
-			this
-		);
+		polygonTemplate.events.on('hit', (e) => this.getProvinceData(e), this);
 
 		// Create hover state and set alternative fill color
 		let hs = polygonTemplate.states.create('hover');
@@ -73,38 +63,31 @@ export default class MapsAmchats extends Component {
 
 		map.exporting.menu = new am4core.ExportMenu();
 		this.map = map;
-		console.log(data);
 	}
+
+	getProvinceData(event) {
+		
+		this.setState(prevState => ({
+			...prevState,
+			_provinceData: get(event, 'target._dataItem._dataContext.agrop_use.production', 'No data'),
+			provinceName: get(event, 'target._dataItem._dataContext.name', 'No name')
+		})
+	)}
+
 	componentWillUnmount() {
 		if (this.chart) {
 			this.chart.dispose();
 		}
 	}
 
-	renderProvince(dataProvince) {
-		return (
-			<div>
-				<h1>
-					<span>
-						<strong>{this.state.provinceID} </strong>
-					</span>{' '}
-					{this.state.provinceName}
-				</h1>
-				<h3>Produccion</h3>
-				{this.mapData(this.state.dataProvince)}
-			</div>
-		);
-	}
-
-	mapData(provinceData) {
-		console.log(this.state);
-	}
-
 	render() {
+		// polygonTemplate.events.on('hit', this.getProvinceData, this);
+
+		const {_provinceData, provinceName} = this.state;
 		return (
 			<Container>
 				<div id='chartdiv' style={{ width: '100%', height: '500px' }} />
-				{this.renderProvince(this.state)}
+				{provinceName && <ProvinceData name={provinceName} data={_provinceData} />}
 			</Container>
 		);
 	}
