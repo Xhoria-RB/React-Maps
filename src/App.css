@@ -1,6 +1,34 @@
 #chartdiv {
-  background-color: #30303d;
-  color: #fff;
-  width: 100%;
-  height: 500px;
+	background-color: #30303d;
+	color: #fff;
+	width: 100%;
+	height: 500px;
+}
+.form {
+	padding: 1em;
+}
+
+label {
+	display: flex;
+	font-weight: 600;
+}
+
+button {
+	justify-content: flex-end;
+}
+.jumbotron {
+	width: 500px;
+	height: auto;
+	margin: auto;
+	padding: 1.5rem;
+}
+.center-text {
+	text-align: center;
+	width: auto;
+	height: auto;
+}
+#submit {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
 }
