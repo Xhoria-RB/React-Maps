@@ -25,10 +25,10 @@ export default class AppNavbar extends Component {
 						<Collapse isOpen={this.state.isOpen} navbar>
 							<Nav className='ml-auto' navbar>
 								<NavItem>
-									<NavLink href='#'>Sign In</NavLink>
+									<NavLink href='/login'>Sign In</NavLink>
 								</NavItem>
 								<NavItem>
-									<NavLink href='#'>Sign Up</NavLink>
+									<NavLink href='/register'>Sign Up</NavLink>
 								</NavItem>
 								<NavItem>
 									<Input type='search' name='search' id='searchInput' placeholder='Search' />

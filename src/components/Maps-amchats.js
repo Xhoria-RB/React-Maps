@@ -4,7 +4,7 @@ import { get } from 'lodash';
 
 import * as am4core from '@amcharts/amcharts4/core';
 import * as am4maps from '@amcharts/amcharts4/maps';
-import am4geodata_rd from '@amcharts/amcharts4-geodata/dominicanRepublicHigh';
+import am4geodata_rd from '@amcharts/amcharts4-geodata/dominicanRepublicLow';
 import am4themes_dark from '@amcharts/amcharts4/themes/dark';
 import am4themes_animated from '@amcharts/amcharts4/themes/animated';
 
@@ -66,13 +66,12 @@ export default class MapsAmchats extends Component {
 	}
 
 	getProvinceData(event) {
-		
-		this.setState(prevState => ({
+		this.setState((prevState) => ({
 			...prevState,
-			_provinceData: get(event, 'target._dataItem._dataContext.agrop_use.production', 'No data'),
-			provinceName: get(event, 'target._dataItem._dataContext.name', 'No name')
-		})
-	)}
+			_provinceData : get(event, 'target._dataItem._dataContext.agrop_use.production', 'No data'),
+			provinceName  : get(event, 'target._dataItem._dataContext.name', 'No name')
+		}));
+	}
 
 	componentWillUnmount() {
 		if (this.chart) {
@@ -83,7 +82,7 @@ export default class MapsAmchats extends Component {
 	render() {
 		// polygonTemplate.events.on('hit', this.getProvinceData, this);
 
-		const {_provinceData, provinceName} = this.state;
+		const { _provinceData, provinceName } = this.state;
 		return (
 			<Container>
 				<div id='chartdiv' style={{ width: '100%', height: '500px' }} />
