@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container } from 'reactstrap';
+import { Container, Row, Col, Button } from 'reactstrap';
 import { get } from 'lodash';
 
 import * as am4core from '@amcharts/amcharts4/core';
@@ -7,7 +7,6 @@ import * as am4maps from '@amcharts/amcharts4/maps';
 import am4geodata_rd from '@amcharts/amcharts4-geodata/dominicanRepublicLow';
 import am4themes_dark from '@amcharts/amcharts4/themes/dark';
 import am4themes_animated from '@amcharts/amcharts4/themes/animated';
-import { Row, Col, Button, Container } from 'reactstrap';
 
 import data from './data.json';
 
@@ -24,7 +23,7 @@ export default class MapsAmchats extends Component {
       provinceSoil    : {},
       provinceAgrop   : {},
       _provinceData   : {},
-      isData          : true
+      isData          : false
     };
     this.toggle = this.toggle.bind(this);
   }
@@ -104,16 +103,16 @@ export default class MapsAmchats extends Component {
         <div id='chartdiv' style={{ width: '100%', height: '500px' }} />
         <Row>
           <Col sm='12' md={{ size: 6, offset: 3 }}>
-            <Button className='btn btn-large btn-block' color={this.state.btnColor} onClick={this.toggle}>
+            <Button className='btn btn-large btn-block my-2' color={this.state.btnColor} onClick={this.toggle}>
               Change
             </Button>
           </Col>
         </Row>
         <Container className='my-2'>
           {this.state.isData ? (
-            <Parcels id={provinceID} />
-          ) : (
             <ProvinceData name={provinceName} data={_provinceData} weather={provinceWeather} soil={provinceSoil} />
+          ) : (
+            <Parcels id={provinceID} />
           )}
         </Container>
       </Container>
