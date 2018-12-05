@@ -7,6 +7,7 @@ import * as am4maps from '@amcharts/amcharts4/maps';
 import am4geodata_rd from '@amcharts/amcharts4-geodata/dominicanRepublicLow';
 import am4themes_dark from '@amcharts/amcharts4/themes/dark';
 import am4themes_animated from '@amcharts/amcharts4/themes/animated';
+import { Row, Col, Button, Container } from 'reactstrap';
 
 import data from './data.json';
 
@@ -22,8 +23,10 @@ export default class MapsAmchats extends Component {
       provinceWeather : {},
       provinceSoil    : {},
       provinceAgrop   : {},
-      _provinceData   : {}
+      _provinceData   : {},
+      isData          : true
     };
+    this.toggle = this.toggle.bind(this);
   }
 
   componentDidMount() {
@@ -76,6 +79,12 @@ export default class MapsAmchats extends Component {
       provinceID      : get(event, 'target._dataItem._dataContext.id', 'No id')
     }));
   }
+  toggle() {
+    this.setState((prevState) => ({
+      ...prevState,
+      isData : !this.state.isData
+    }));
+  }
 
   componentWillUnmount() {
     if (this.chart) {
@@ -85,15 +94,28 @@ export default class MapsAmchats extends Component {
 
   render() {
     // polygonTemplate.events.on('hit', this.getProvinceData, this);
+    // {provinceName && (
+    // <ProvinceData name={provinceName} data={_provinceData} weather={provinceWeather} soil={provinceSoil} />
+    // )}
 
     const { _provinceData, provinceName, provinceSoil, provinceWeather, provinceID } = this.state;
     return (
       <Container>
         <div id='chartdiv' style={{ width: '100%', height: '500px' }} />
-        {provinceName && (
-          <ProvinceData name={provinceName} data={_provinceData} weather={provinceWeather} soil={provinceSoil} />
-        )}
-        <Parcels id={provinceID} />
+        <Row>
+          <Col sm='12' md={{ size: 6, offset: 3 }}>
+            <Button className='btn btn-large btn-block' color={this.state.btnColor} onClick={this.toggle}>
+              Change
+            </Button>
+          </Col>
+        </Row>
+        <Container className='my-2'>
+          {this.state.isData ? (
+            <Parcels id={provinceID} />
+          ) : (
+            <ProvinceData name={provinceName} data={_provinceData} weather={provinceWeather} soil={provinceSoil} />
+          )}
+        </Container>
       </Container>
     );
   }
