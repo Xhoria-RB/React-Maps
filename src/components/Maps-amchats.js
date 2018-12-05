@@ -23,9 +23,10 @@ export default class MapsAmchats extends Component {
       provinceSoil    : {},
       provinceAgrop   : {},
       _provinceData   : {},
-      isData          : false
+      isData          : true
     };
     this.toggle = this.toggle.bind(this);
+    this.renderData = this.renderData.bind(this);
   }
 
   componentDidMount() {
@@ -41,22 +42,11 @@ export default class MapsAmchats extends Component {
     map.series.push(polygonSeries);
 
     polygonSeries.data = data.provincias;
-    /**
-     *  Todo's (display only and static data): 
-     * Agregar form para registrar usuario
-     * Agregar registro de parcelas (registradas en su municipio)
-     * El usuario debe ser capaz de registrar parcelas y los tipos de suelo
-     * Desplegar datos de division administrativa del terreno por parcelas
-     */
-
-    /* polygonSeries.data = [
-      { id: 'DO-32', name: 'Santo Domingo', agrp: 612.4, mine: 0 }
-    ]; */
 
     // Configure series
     let polygonTemplate = polygonSeries.mapPolygons.template;
     // polygonTemplate.tooltipText = '{name} Agrp: {soil.use.agrp} Temperatura: {weather.main.temp}';
-    polygonTemplate.tooltipText = '{name} Agrp: {soil.use.agrp} Temperatura: {agrop_use.production.rice}';
+    polygonTemplate.tooltipText = '{name} Temperatura: {weather.main.temp} Celcius';
     polygonTemplate.fill = am4core.color('#757575');
     polygonTemplate.events.on('hit', (e) => this.getProvinceData(e), this);
 
@@ -85,6 +75,18 @@ export default class MapsAmchats extends Component {
     }));
   }
 
+  renderData({ _provinceData, provinceName, provinceSoil, provinceWeather, provinceID } = this.state) {
+    if (this.state.provinceID == '') {
+      return <h1>Select a province to see the data</h1>;
+    } else {
+      return this.state.isData ? (
+        <ProvinceData name={provinceName} data={_provinceData} weather={provinceWeather} soil={provinceSoil} />
+      ) : (
+        <Parcels id={provinceID} />
+      );
+    }
+  }
+
   componentWillUnmount() {
     if (this.chart) {
       this.chart.dispose();
@@ -97,7 +99,7 @@ export default class MapsAmchats extends Component {
     // <ProvinceData name={provinceName} data={_provinceData} weather={provinceWeather} soil={provinceSoil} />
     // )}
 
-    const { _provinceData, provinceName, provinceSoil, provinceWeather, provinceID } = this.state;
+    // const { _provinceData, provinceName, provinceSoil, provinceWeather, provinceID } = this.state;
     return (
       <Container>
         <div id='chartdiv' style={{ width: '100%', height: '500px' }} />
@@ -108,13 +110,7 @@ export default class MapsAmchats extends Component {
             </Button>
           </Col>
         </Row>
-        <Container className='my-2'>
-          {this.state.isData ? (
-            <ProvinceData name={provinceName} data={_provinceData} weather={provinceWeather} soil={provinceSoil} />
-          ) : (
-            <Parcels id={provinceID} />
-          )}
-        </Container>
+        <Container className='my-2'>{this.renderData()}</Container>
       </Container>
     );
   }

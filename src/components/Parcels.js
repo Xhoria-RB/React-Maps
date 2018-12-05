@@ -3,11 +3,15 @@ import municipies from './municipies.json';
 import { capitalize } from 'lodash';
 import { Container, Row, Col, Label, FormGroup, Input, Button } from 'reactstrap';
 import { AvForm, AvGroup, AvInput, AvFeedback, AvField } from 'availity-reactstrap-validation';
-import { Link } from 'react-router-dom';
+import AppModal from './AppModal';
 
 export default class Parcels extends Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      modal : false
+    };
 
     this.submit = this.submit.bind(this);
   }
@@ -15,17 +19,25 @@ export default class Parcels extends Component {
   submit(e) {
     const DNI = document.getElementById('propietaryDNI').value;
     if (DNI === '1234567890') {
-      alert('Thanks');
+      if (document.getElementById('municipieSelect').value !== 'SD') {
+        alert('Thanks');
+        this.setState({
+          modal : true
+        });
+      }
     } else {
       e.preventDefault();
       alert('Not a valid DNI');
-      document.getElementById('latitude').value = '';
-      document.getElementById('longitude').value = '';
-      document.getElementById('propietaryName').value = '';
-      document.getElementById('propietaryDNI').value = '';
-      document.getElementById('parcelLenght').value = '';
-      document.getElementById('zip').value = '';
+      this.cleanForm();
     }
+  }
+  cleanForm() {
+    document.getElementById('latitude').value = '';
+    document.getElementById('longitude').value = '';
+    document.getElementById('propietaryName').value = '';
+    document.getElementById('propietaryDNI').value = '';
+    document.getElementById('parcelLenght').value = '';
+    document.getElementById('zip').value = '';
   }
   render() {
     const { id } = this.props;
@@ -33,9 +45,9 @@ export default class Parcels extends Component {
     return (
       <div>
         <Container id='personContainer'>
-          <h2 className='text-center'>Register your parcel</h2>
+          <h2 className='text-center'>Request a register for your parcel</h2>
           <hr />
-          <AvForm id='parcelsForm'>
+          <AvForm id='parcelsForm' onValidSubmit={this.submit}>
             <h5>
               <strong style={{ textDecoration: 'underline' }}>Instrucctions:</strong>
             </h5>
@@ -48,7 +60,15 @@ export default class Parcels extends Component {
               <Col xs='6'>
                 <AvGroup>
                   <Label for='latitude'>Coords</Label>
-                  <AvInput type='text' className='test' name='latitude' id='latitude' placeholder='Latitude' required />
+                  <AvInput
+                    type='text'
+                    className='test'
+                    name='latitude'
+                    id='latitude'
+                    placeholder='Latitude'
+                    autoFocus
+                    required
+                  />
                   <AvInput
                     type='text'
                     className='test'
@@ -62,7 +82,7 @@ export default class Parcels extends Component {
               </Col>
               <Col xs='6'>
                 <Label for='municipieSelect'>Select</Label>
-                <Input type='select' name='select' id='municipieSelect'>
+                <Input type='select' name='select' id='municipieSelect' defaultValue='SD' required>
                   {municName.map((name, index) => <option key={index}>{capitalize(name.municipies)}</option>)}
                 </Input>
               </Col>
@@ -128,11 +148,8 @@ export default class Parcels extends Component {
             </Row>
             <AvGroup check row>
               <Col sm={{ size: 10, offset: 1 }}>
-                <Link href='/person' to='/person'>
-                  <Button className='btn btn-large btn-block my-2' onClick={this.submit}>
-                    Submit
-                  </Button>
-                </Link>
+                <Button className='btn btn-large btn-block my-2'>Submit</Button>
+                {this.state.modal ? <AppModal modal={this.state.modal} /> : ''}
               </Col>
             </AvGroup>
           </AvForm>
