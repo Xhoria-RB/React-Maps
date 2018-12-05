@@ -76,7 +76,7 @@ export default class MapsAmchats extends Component {
   }
 
   renderData({ _provinceData, provinceName, provinceSoil, provinceWeather, provinceID } = this.state) {
-    if (this.state.provinceID == '') {
+    if (this.state.provinceID === '') {
       return <h1>Select a province to see the data</h1>;
     } else {
       return this.state.isData ? (
@@ -102,6 +102,12 @@ export default class MapsAmchats extends Component {
     // const { _provinceData, provinceName, provinceSoil, provinceWeather, provinceID } = this.state;
     return (
       <Container>
+        <h1>Welcome to React-Maps</h1>
+        <p>
+          The dynamic data source of Dominican Republic. This is an final proyect from University in APEC made by
+          Ricardo Bibieca, the data displayed is not and by any means meant to be true or the forms aren't working for
+          real.{' '}
+        </p>
         <div id='chartdiv' style={{ width: '100%', height: '500px' }} />
         <Row>
           <Col sm='12' md={{ size: 6, offset: 3 }}>

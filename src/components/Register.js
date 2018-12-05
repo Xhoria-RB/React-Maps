@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Button } from 'reactstrap';
+import { Container, Row, Col, Button, Fade } from 'reactstrap';
 import Person from './Person';
 import Entity from './Entity';
 
@@ -31,15 +31,17 @@ export default class Register extends Component {
   render() {
     return (
       <Container className='register-form'>
-        <Row>
-          <Col sm='12' md={{ size: 6, offset: 3 }}>
-            <Button className='btn btn-large btn-block' color={this.state.btnColor} onClick={this.toggle}>
-              Change
-            </Button>
-          </Col>
-        </Row>
+        <Fade in='true'>
+          <Row>
+            <Col sm='12' md={{ size: 6, offset: 3 }}>
+              <Button className='btn btn-large btn-block' color={this.state.btnColor} onClick={this.toggle}>
+                Change
+              </Button>
+            </Col>
+          </Row>
 
-        <Container className='my-2'>{this.state.isPerson ? <Person /> : <Entity />}</Container>
+          <Container className='my-2'>{this.state.isPerson ? <Person /> : <Entity />}</Container>
+        </Fade>
       </Container>
     );
   }

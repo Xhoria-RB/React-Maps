@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Jumbotron, Col, Form, FormGroup, Label, Input, Button, Alert } from 'reactstrap';
+import { Container, Jumbotron, Col, Form, FormGroup, Label, Input, Button, Alert, Fade } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 export default class Login extends Component {
@@ -37,54 +37,56 @@ export default class Login extends Component {
   }
   render() {
     return (
-      <Jumbotron>
-        <Container>
-          <h2 className='center-text'>Sign In</h2>
-          <hr />
-          <div id='errorMsg' hidden={this.state.isHidden}>
-            <Alert color='danger'>User email or password are wrong</Alert>
-          </div>
-          <Form className='form' onSubmit='return false'>
-            <Col>
-              <FormGroup>
-                <Label>Email</Label>
-                <Input
-                  type='email'
-                  name='email'
-                  id='emailInput'
-                  placeholder='example@example.com'
-                  onFocus={this.toggle}
-                  autoFocus
-                />
-              </FormGroup>
-            </Col>
-            <Col>
-              <FormGroup>
-                <label htmlFor='passwordInput'>Password</label>
-                <Input type='password' name='password' id='passwordInput' placeholder='******' />
-              </FormGroup>
-            </Col>
-            <FormGroup check row>
-              <Col sm={{ size: 10, offset: 3 }}>
-                <FormGroup check>
-                  <Label check>
-                    <Input type='checkbox' id='rememberMe' className='checkbox mb-3' /> Remember me
-                  </Label>
+      <Fade in='true'>
+        <Jumbotron>
+          <Container>
+            <h2 className='center-text'>Sign In</h2>
+            <hr />
+            <div id='errorMsg' hidden={this.state.isHidden}>
+              <Alert color='danger'>User email or password are wrong</Alert>
+            </div>
+            <Form className='form' onSubmit='return false'>
+              <Col>
+                <FormGroup>
+                  <Label>Email</Label>
+                  <Input
+                    type='email'
+                    name='email'
+                    id='emailInput'
+                    placeholder='example@example.com'
+                    onFocus={this.toggle}
+                    autoFocus
+                  />
                 </FormGroup>
               </Col>
-            </FormGroup>
-            <FormGroup>
-              <Col md='auto'>
-                <Link href='/' to='/'>
-                  <Button className='btn btn-large btn-block' color='primary' onClick={this.onSubmit}>
-                    Submit
-                  </Button>
-                </Link>
+              <Col>
+                <FormGroup>
+                  <label htmlFor='passwordInput'>Password</label>
+                  <Input type='password' name='password' id='passwordInput' placeholder='******' />
+                </FormGroup>
               </Col>
-            </FormGroup>
-          </Form>
-        </Container>
-      </Jumbotron>
+              <FormGroup check row>
+                <Col sm={{ size: 10, offset: 3 }}>
+                  <FormGroup check>
+                    <Label check>
+                      <Input type='checkbox' id='rememberMe' className='checkbox mb-3' /> Remember me
+                    </Label>
+                  </FormGroup>
+                </Col>
+              </FormGroup>
+              <FormGroup>
+                <Col md='auto'>
+                  <Link href='/' to='/'>
+                    <Button className='btn btn-large btn-block' color='primary' onClick={this.onSubmit}>
+                      Submit
+                    </Button>
+                  </Link>
+                </Col>
+              </FormGroup>
+            </Form>
+          </Container>
+        </Jumbotron>
+      </Fade>
     );
   }
 }
