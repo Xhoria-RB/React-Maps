@@ -11,6 +11,7 @@ import am4themes_animated from '@amcharts/amcharts4/themes/animated';
 import data from './data.json';
 
 import ProvinceData from './ProvinceData';
+import Parcels from './Parcels.js';
 
 export default class MapsAmchats extends Component {
   constructor(props) {
@@ -59,7 +60,7 @@ export default class MapsAmchats extends Component {
 
     // Create hover state and set alternative fill color
     let hs = polygonTemplate.states.create('hover');
-    hs.properties.fill = am4core.color('#3c5bdc');
+    hs.properties.fill = am4core.color('#317ef9');
 
     map.exporting.menu = new am4core.ExportMenu();
     this.map = map;
@@ -70,8 +71,9 @@ export default class MapsAmchats extends Component {
       ...prevState,
       _provinceData   : get(event, 'target._dataItem._dataContext.agrop_use.production', 'No data'),
       provinceName    : get(event, 'target._dataItem._dataContext.name', 'No name'),
-      provinceSoil    : get(event, 'target._dataItem._dataContext.soil', 'No soil data'),
-      provinceWeather : get(event, 'target._dataItem._dataContext.weather.main', 'No weather data')
+      provinceSoil    : get(event, 'target._dataItem._dataContext.soil.use', 'No soil data'),
+      provinceWeather : get(event, 'target._dataItem._dataContext.weather.main', 'No weather data'),
+      provinceID      : get(event, 'target._dataItem._dataContext.id', 'No id')
     }));
   }
 
@@ -84,13 +86,14 @@ export default class MapsAmchats extends Component {
   render() {
     // polygonTemplate.events.on('hit', this.getProvinceData, this);
 
-    const { _provinceData, provinceName, provinceSoil, provinceWeather } = this.state;
+    const { _provinceData, provinceName, provinceSoil, provinceWeather, provinceID } = this.state;
     return (
       <Container>
         <div id='chartdiv' style={{ width: '100%', height: '500px' }} />
         {provinceName && (
           <ProvinceData name={provinceName} data={_provinceData} weather={provinceWeather} soil={provinceSoil} />
         )}
+        <Parcels id={provinceID} />
       </Container>
     );
   }

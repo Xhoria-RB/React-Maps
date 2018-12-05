@@ -28,62 +28,87 @@ export default class Person extends Component {
   render() {
     return (
       <Container id='personContainer'>
+        <h2 className='text-center'>User registration form</h2>
+        <hr />
         <Form>
-          <FormGroup>
-            <Row>
-              <Col sx='6'>
-                <Label for='personName'>Name</Label>
-                <Input type='text' name='personName' id='personName' placeholder='Enter your name' />
-              </Col>
-              <Col xs='6'>
-                <Label for='personLastName'>Last Name</Label>
-                <Input type='text' name='personLastName' id='personLastName' placeholder='Enter your last name' />
-              </Col>
-            </Row>
-          </FormGroup>
-
-          <FormGroup>
-            <Row>
-              <Col xs='3'>
-                <Label for='personDNI'>DNI</Label>
-                <Input type='text' name='personDNI' id='personDNI' placeholder='###-#######-#' />
-              </Col>
-              <Col xs='3'>
-                <Label for='selectDay'>Select Day</Label>
-                <Input type='text' name='selectDay' id='selectDay' placeholder='Click to select' />
-              </Col>
-
-              <Col xs='6'>
-                <Label for='address'>Address</Label>
-                <Input type='textarea' name='address' id='address' placeholder='Enter your address' />
-              </Col>
-            </Row>
-          </FormGroup>
-
-          <FormGroup />
-
-          <FormGroup>
-            <Label for='phoneNumber'>Phone number</Label>
-            <Input type='text' name='phoneNumber' id='phoneNumber' placeholder='000-000-0000' />
-          </FormGroup>
-
-          <FormGroup>
-            <Label for='email'>Email</Label>
-            <Input type='email' name='email' id='email' placeholder='Enter your email' />
-          </FormGroup>
-          <FormGroup>
-            <Label for='password'>Password</Label>
-            <Input type='password' name='password' id='password' placeholder='Enter your password' />
-          </FormGroup>
-          <FormGroup>
-            <Label for='confirmPassword'>Confirm password</Label>
-            <Input type='password' name='confirmPassword' id='confirmPassword' placeholder='Re-enter your password' />
-          </FormGroup>
-          <Row>
-            <Col sm='12' md={{ size: 6, offset: 3 }}>
-              <Button color='primary'>Submit</Button>
+          <FormGroup row>
+            <Col xs='4'>
+              <Label for='personName'>Name</Label>
+              <Input type='text' name='personName' id='personName' placeholder='Enter your name' required />
             </Col>
-          </Row>
+            <Col xs='4'>
+              <Label for='personLastName'>Last Name</Label>
+              <Input
+                type='text'
+                name='personLastName'
+                id='personLastName'
+                placeholder='Enter your last name'
+                required
+              />
+            </Col>
+            <Col xs='4'>
+              <Label for='personDNI'>DNI</Label>
+              <Input type='text' name='personDNI' id='personDNI' placeholder='###-#######-#' required />
+            </Col>
+          </FormGroup>
+
+          <FormGroup row>
+            <Col xs='3'>
+              <Label for='selectDay'>Birthday date</Label>
+              <Input type='text' name='selectDay' id='selectDay' placeholder='Click to select' required />
+            </Col>
+            <Col xs='9'>
+              <Label for='address'>Address</Label>
+              <Input type='text' name='address' id='address' placeholder='Enter your address' required />
+            </Col>
+          </FormGroup>
+          <FormGroup row>
+            <Col xs='6'>
+              <Label for='phoneNumber'>Phone number</Label>
+              <Input type='text' name='phoneNumber' id='phoneNumber' placeholder='000-000-0000' required />
+            </Col>
+            <Col xs='6'>
+              <Label for='phoneNumber2'>Second phone number</Label>
+              <Input type='text' name='phoneNumber2' id='phoneNumber2' placeholder='000-000-0000' />
+            </Col>
+          </FormGroup>
+
+          <FormGroup row>
+            <Label for='email' sm={2}>
+              Email
+            </Label>
+            <Col sm={10}>
+              <Input type='email' name='email' id='email' placeholder='Enter your email' required />
+            </Col>
+          </FormGroup>
+          <FormGroup row>
+            <Label for='password' sm={2}>
+              Password
+            </Label>
+            <Col sm={10}>
+              <Input type='password' name='password' id='password' placeholder='Enter your password' required />
+            </Col>
+          </FormGroup>
+          <FormGroup row>
+            <Label for='confirmPassword' sm={2}>
+              Confirm password
+            </Label>
+            <Col sm={10}>
+              <Input
+                type='password'
+                name='confirmPassword'
+                id='confirmPassword'
+                placeholder='Re-enter your password'
+                required
+              />
+            </Col>
+          </FormGroup>
+          <br />
+          <FormGroup check row>
+            <Col sm={{ size: 10, offset: 1 }}>
+              <Button className='btn btn-large btn-block my-2'>Submit</Button>
+            </Col>
+          </FormGroup>
         </Form>
       </Container>
     );

@@ -14,7 +14,7 @@ label {
 }
 
 button {
-  justify-content: flex-end;
+  margin-bottom: 1rem;
 }
 .jumbotron {
   width: 500px;
@@ -32,9 +32,16 @@ button {
   justify-content: flex-end;
   align-items: flex-end;
 }
-button {
-  width: 500px;
-}
+
 #personContainer {
   border: 1px solid grey;
+  width: 800px;
+}
+#personContainer input,
+label {
+  margin: auto;
+  padding: 0.5rem;
+}
+col.provinceData {
+  background-color: darkslategrey;
 }

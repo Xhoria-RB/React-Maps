@@ -1,0 +1,622 @@
+[
+  {
+    "province_id": "DO-32",
+    "municipies": "SANTO DOMINGO CENTRO (DN)"
+  },
+  {
+    "province_id": "DO-02",
+    "municipies": "AZUA"
+  },
+  {
+    "province_id": "DO-02",
+    "municipies": "LAS CHARCAS"
+  },
+  {
+    "province_id": "DO-02",
+    "municipies": "LAS YAYAS DE VIAJAMA"
+  },
+  {
+    "province_id": "DO-02",
+    "municipies": "PADRE LAS CASAS"
+  },
+  {
+    "province_id": "DO-02",
+    "municipies": "PERALTA"
+  },
+  {
+    "province_id": "DO-02",
+    "municipies": "SABANA YEGUA"
+  },
+  {
+    "province_id": "DO-02",
+    "municipies": "PUEBLO VIEJO"
+  },
+  {
+    "province_id": "DO-02",
+    "municipies": "TABARA ARRIBA"
+  },
+  {
+    "province_id": "DO-02",
+    "municipies": "GUAYABAL"
+  },
+  {
+    "province_id": "DO-02",
+    "municipies": "ESTEBANIA"
+  },
+  {
+    "province_id": "DO-03",
+    "municipies": "NEIBA"
+  },
+  {
+    "province_id": "DO-03",
+    "municipies": "GALVAN"
+  },
+  {
+    "province_id": "DO-03",
+    "municipies": "TAMAYO"
+  },
+  {
+    "province_id": "DO-03",
+    "municipies": "VILLA JARAGUA"
+  },
+  {
+    "province_id": "DO-03",
+    "municipies": "LOS RIOS"
+  },
+  {
+    "province_id": "DO-04",
+    "municipies": "BARAHONA"
+  },
+  {
+    "province_id": "DO-04",
+    "municipies": "CABRAL"
+  },
+  {
+    "province_id": "DO-04",
+    "municipies": "ENRIQUILLO"
+  },
+  {
+    "province_id": "DO-04",
+    "municipies": "PARAISO"
+  },
+  {
+    "province_id": "DO-04",
+    "municipies": "VICENTE NOBLE"
+  },
+  {
+    "province_id": "DO-04",
+    "municipies": "EL PEÑON"
+  },
+  {
+    "province_id": "DO-04",
+    "municipies": "LA CIENAGA"
+  },
+  {
+    "province_id": "DO-04",
+    "municipies": "FUNDACION"
+  },
+  {
+    "province_id": "DO-04",
+    "municipies": "LAS SALINAS"
+  },
+  {
+    "province_id": "DO-04",
+    "municipies": "POLO"
+  },
+  {
+    "province_id": "DO-04",
+    "municipies": "JAQUIMEYES"
+  },
+  {
+    "province_id": "DO-05",
+    "municipies": "DAJABON"
+  },
+  {
+    "province_id": "DO-05",
+    "municipies": "LOMA DE CABRERA"
+  },
+  {
+    "province_id": "DO-05",
+    "municipies": "PARTIDO"
+  },
+  {
+    "province_id": "DO-05",
+    "municipies": "RESTAURACION"
+  },
+  {
+    "province_id": "DO-05",
+    "municipies": "EL PINO"
+  },
+  {
+    "province_id": "DO-06",
+    "municipies": "SAN FRANCISCO DE MACORIS"
+  },
+  {
+    "province_id": "DO-06",
+    "municipies": "ARENOSO"
+  },
+  {
+    "province_id": "DO-06",
+    "municipies": "CASTILLO"
+  },
+  {
+    "province_id": "DO-06",
+    "municipies": "PIMENTEL"
+  },
+  {
+    "province_id": "DO-06",
+    "municipies": "VILLA RIVA"
+  },
+  {
+    "province_id": "DO-06",
+    "municipies": "LAS GUARANAS"
+  },
+  {
+    "province_id": "DO-06",
+    "municipies": "EUGENIO MARIA DE HOSTOS"
+  },
+  {
+    "province_id": "DO-07",
+    "municipies": "COMENDADOR"
+  },
+  {
+    "province_id": "DO-07",
+    "municipies": "BANICA"
+  },
+  {
+    "province_id": "DO-07",
+    "municipies": "EL LLANO"
+  },
+  {
+    "province_id": "DO-07",
+    "municipies": "HONDO VALLE"
+  },
+  {
+    "province_id": "DO-07",
+    "municipies": "PEDRO SANTANA"
+  },
+  {
+    "province_id": "DO-07",
+    "municipies": "JUAN SANTIAGO"
+  },
+  {
+    "province_id": "DO-08",
+    "municipies": "EL SEIBO"
+  },
+  {
+    "province_id": "DO-08",
+    "municipies": "MICHES"
+  },
+  {
+    "province_id": "DO-09",
+    "municipies": "MOCA"
+  },
+  {
+    "province_id": "DO-09",
+    "municipies": "CAYETANO GERMOSEN"
+  },
+  {
+    "province_id": "DO-09",
+    "municipies": "GASPAR HERNANDEZ"
+  },
+  {
+    "province_id": "DO-09",
+    "municipies": "JAMAO AL NORTE"
+  },
+  {
+    "province_id": "DO-10",
+    "municipies": "JIMANI"
+  },
+  {
+    "province_id": "DO-10",
+    "municipies": "DUVERGE"
+  },
+  {
+    "province_id": "DO-10",
+    "municipies": "LA DESCUBIERTA"
+  },
+  {
+    "province_id": "DO-10",
+    "municipies": "POSTRER RIO"
+  },
+  {
+    "province_id": "DO-10",
+    "municipies": "CRISTOBAL"
+  },
+  {
+    "province_id": "DO-10",
+    "municipies": "MELLA"
+  },
+  {
+    "province_id": "DO-11",
+    "municipies": "HIGUEY"
+  },
+  {
+    "province_id": "DO-11",
+    "municipies": "SAN RAFAEL DEL YUMA"
+  },
+  {
+    "province_id": "DO-12",
+    "municipies": "LA ROMANA"
+  },
+  {
+    "province_id": "DO-12",
+    "municipies": "GUAYMATE"
+  },
+  {
+    "province_id": "DO-12",
+    "municipies": "VILLA HERMOSA"
+  },
+  {
+    "province_id": "DO-13",
+    "municipies": "LA VEGA"
+  },
+  {
+    "province_id": "DO-13",
+    "municipies": "CONSTANZA"
+  },
+  {
+    "province_id": "DO-13",
+    "municipies": "JARABACOA"
+  },
+  {
+    "province_id": "DO-13",
+    "municipies": "JIMA ABAJO"
+  },
+  {
+    "province_id": "DO-14",
+    "municipies": "NAGUA"
+  },
+  {
+    "province_id": "DO-14",
+    "municipies": "CABRERA"
+  },
+  {
+    "province_id": "DO-14",
+    "municipies": "EL FACTOR"
+  },
+  {
+    "province_id": "DO-14",
+    "municipies": "RIO SAN JUAN"
+  },
+  {
+    "province_id": "DO-15",
+    "municipies": "MONTE CRISTI"
+  },
+  {
+    "province_id": "DO-15",
+    "municipies": "CASTAÃ‘UELAS"
+  },
+  {
+    "province_id": "DO-15",
+    "municipies": "GUAYUBIN"
+  },
+  {
+    "province_id": "DO-15",
+    "municipies": "LAS MATAS DE SANTA CRUZ"
+  },
+  {
+    "province_id": "DO-15",
+    "municipies": "PEPILLO SALCEDO"
+  },
+  {
+    "province_id": "DO-15",
+    "municipies": "VILLA VASQUEZ"
+  },
+  {
+    "province_id": "DO-16",
+    "municipies": "PEDERNALES"
+  },
+  {
+    "province_id": "DO-16",
+    "municipies": "OVIEDO"
+  },
+  {
+    "province_id": "DO-17",
+    "municipies": "BANI"
+  },
+  {
+    "province_id": "DO-17",
+    "municipies": "NIZAO"
+  },
+  {
+    "province_id": "DO-18",
+    "municipies": "PUERTO PLATA"
+  },
+  {
+    "province_id": "DO-18",
+    "municipies": "ALTAMIRA"
+  },
+  {
+    "province_id": "DO-18",
+    "municipies": "GUANANICO"
+  },
+  {
+    "province_id": "DO-18",
+    "municipies": "IMBERT"
+  },
+  {
+    "province_id": "DO-18",
+    "municipies": "LOS HIDALGOS"
+  },
+  {
+    "province_id": "DO-18",
+    "municipies": "LUPERON"
+  },
+  {
+    "province_id": "DO-18",
+    "municipies": "SOSUA"
+  },
+  {
+    "province_id": "DO-18",
+    "municipies": "VILLA ISABELA"
+  },
+  {
+    "province_id": "DO-18",
+    "municipies": "VILLA MONTELLANO"
+  },
+  {
+    "province_id": "DO-19",
+    "municipies": "SALCEDO"
+  },
+  {
+    "province_id": "DO-19",
+    "municipies": "TENARES"
+  },
+  {
+    "province_id": "DO-19",
+    "municipies": "VILLA TAPIA"
+  },
+  {
+    "province_id": "DO-20",
+    "municipies": "SAMANA"
+  },
+  {
+    "province_id": "DO-20",
+    "municipies": "SANCHEZ"
+  },
+  {
+    "province_id": "DO-20",
+    "municipies": "LAS TERRENAS"
+  },
+  {
+    "province_id": "DO-21",
+    "municipies": "SAN CRISTOBAL"
+  },
+  {
+    "province_id": "DO-21",
+    "municipies": "SABANA GRANDE DE PALENQUE"
+  },
+  {
+    "province_id": "DO-21",
+    "municipies": "BAJOS DE HAINA"
+  },
+  {
+    "province_id": "DO-21",
+    "municipies": "CAMBITA GARABITOS"
+  },
+  {
+    "province_id": "DO-21",
+    "municipies": "VILLA ALTAGRACIA"
+  },
+  {
+    "province_id": "DO-21",
+    "municipies": "YAGUATE"
+  },
+  {
+    "province_id": "DO-21",
+    "municipies": "SAN GREGORIO DE NIGUA"
+  },
+  {
+    "province_id": "DO-21",
+    "municipies": "LOS CACAOS"
+  },
+  {
+    "province_id": "DO-22",
+    "municipies": "SAN JUAN"
+  },
+  {
+    "province_id": "DO-22",
+    "municipies": "BOHECHIO"
+  },
+  {
+    "province_id": "DO-22",
+    "municipies": "EL CERCADO"
+  },
+  {
+    "province_id": "DO-22",
+    "municipies": "JUAN DE HERRERA"
+  },
+  {
+    "province_id": "DO-22",
+    "municipies": "LAS MATAS DE FARFAN"
+  },
+  {
+    "province_id": "DO-22",
+    "municipies": "VALLEJUELO"
+  },
+  {
+    "province_id": "DO-23",
+    "municipies": "SAN PEDRO DE MACORIS"
+  },
+  {
+    "province_id": "DO-23",
+    "municipies": "LOS LLANOS"
+  },
+  {
+    "province_id": "DO-23",
+    "municipies": "RAMON SANTANA"
+  },
+  {
+    "province_id": "DO-23",
+    "municipies": "CONSUELO"
+  },
+  {
+    "province_id": "DO-23",
+    "municipies": "QUISQUEYA"
+  },
+  {
+    "province_id": "DO-23",
+    "municipies": "GUAYACANES"
+  },
+  {
+    "province_id": "DO-24",
+    "municipies": "COTUI"
+  },
+  {
+    "province_id": "DO-24",
+    "municipies": "CEVICOS"
+  },
+  {
+    "province_id": "DO-24",
+    "municipies": "FANTINO"
+  },
+  {
+    "province_id": "DO-24",
+    "municipies": "LA MATA"
+  },
+  {
+    "province_id": "DO-25",
+    "municipies": "SANTIAGO"
+  },
+  {
+    "province_id": "DO-25",
+    "municipies": "BISONO"
+  },
+  {
+    "province_id": "DO-25",
+    "municipies": "JANICO"
+  },
+  {
+    "province_id": "DO-25",
+    "municipies": "LICEY AL MEDIO"
+  },
+  {
+    "province_id": "DO-25",
+    "municipies": "SAN JOSE DE LAS MATAS"
+  },
+  {
+    "province_id": "DO-25",
+    "municipies": "TAMBORIL"
+  },
+  {
+    "province_id": "DO-25",
+    "municipies": "VILLA GONZALEZ"
+  },
+  {
+    "province_id": "DO-25",
+    "municipies": "PUÑAL"
+  },
+  {
+    "province_id": "DO-25",
+    "municipies": "SABANA IGLESIA"
+  },
+  {
+    "province_id": "DO-26",
+    "municipies": "SAN IGNACIO DE SABANETA"
+  },
+  {
+    "province_id": "DO-26",
+    "municipies": "VILLA LOS ALMACIGOS"
+  },
+  {
+    "province_id": "DO-26",
+    "municipies": "MONCION"
+  },
+  {
+    "province_id": "DO-27",
+    "municipies": "MAO"
+  },
+  {
+    "province_id": "DO-27",
+    "municipies": "ESPERANZA"
+  },
+  {
+    "province_id": "DO-27",
+    "municipies": "LAGUNA SALADA"
+  },
+  {
+    "province_id": "DO-28",
+    "municipies": "BONAO"
+  },
+  {
+    "province_id": "DO-28",
+    "municipies": "MAIMON"
+  },
+  {
+    "province_id": "DO-28",
+    "municipies": "PIEDRA BLANCA"
+  },
+  {
+    "province_id": "DO-29",
+    "municipies": "MONTE PLATA"
+  },
+  {
+    "province_id": "DO-29",
+    "municipies": "BAYAGUANA"
+  },
+  {
+    "province_id": "DO-29",
+    "municipies": "SABANA GRANDE DE BOYA"
+  },
+  {
+    "province_id": "DO-29",
+    "municipies": "YAMASA"
+  },
+  {
+    "province_id": "DO-29",
+    "municipies": "PERALVILLO"
+  },
+  {
+    "province_id": "DO-30",
+    "municipies": "HATO MAYOR"
+  },
+  {
+    "province_id": "DO-30",
+    "municipies": "SABANA DE LA MAR"
+  },
+  {
+    "province_id": "DO-30",
+    "municipies": "EL VALLE"
+  },
+  {
+    "province_id": "DO-31",
+    "municipies": "SAN JOSE DE OCOA"
+  },
+  {
+    "province_id": "DO-31",
+    "municipies": "SABANA LARGA"
+  },
+  {
+    "province_id": "DO-31",
+    "municipies": "RANCHO ARRIBA"
+  },
+  {
+    "province_id": "DO-32",
+    "municipies": "SANTO DOMINGO ESTE"
+  },
+  {
+    "province_id": "DO-32",
+    "municipies": "SANTO DOMINGO OESTE"
+  },
+  {
+    "province_id": "DO-32",
+    "municipies": "SANTO DOMINGO NORTE"
+  },
+  {
+    "province_id": "DO-32",
+    "municipies": "BOCA CHICA"
+  },
+  {
+    "province_id": "DO-32",
+    "municipies": "SAN ANTONIO DE GUERRA"
+  },
+  {
+    "province_id": "DO-32",
+    "municipies": "LOS ALCARRIZOS"
+  },
+  {
+    "province_id": "DO-32",
+    "municipies": "PEDRO BRAND"
+  }
+]

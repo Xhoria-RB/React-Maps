@@ -1,842 +1,842 @@
 {
-	"provincias": [
-		{ "id": "DO-01", "name": "Distrito Nacional (Santo Domingo)" },
-		{
-			"id": "DO-02",
-			"name": "Azua",
-			"soil": { "use": { "agrp": 897.3, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 25,
-					"temp_min": 20,
-					"temp_max": 30,
-					"precipitations": 0
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 362.42,
-				"intensive_cultive": 195.62,
-				"production": {
-					"rice": 1.02,
-					"cocoa": 0.93,
-					"coffee": 78.97,
-					"cane": 0.01,
-					"citric": 0,
-					"coconut": 0.01,
-					"african_palm": 0.17,
-					"grass": 26.15
-				}
-			}
-		},
-		{
-			"id": "DO-03",
-			"name": "Baoruco",
-			"soil": { "use": { "agrp": 503.5, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 30,
-					"temp_min": 17,
-					"temp_max": 31,
-					"precipitations": 0
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 275.54,
-				"intensive_cultive": 57.74,
-				"production": {
-					"rice": 0.09,
-					"cocoa": 0,
-					"coffee": 41.98,
-					"cane": 77.14,
-					"citric": 0,
-					"coconut": 0,
-					"african_palm": 0,
-					"grass": 17.26
-				}
-			}
-		},
-		{
-			"id": "DO-04",
-			"name": "Barahona",
-			"soil": { "use": { "agrp": 515.7, "mine": 1.3 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 29,
-					"temp_min": 21,
-					"temp_max": 31,
-					"precipitations": 1280.2
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 244.86,
-				"intensive_cultive": 68.54,
-				"production": {
-					"rice": 0,
-					"cocoa": 0,
-					"coffee": 92.88,
-					"cane": 0,
-					"citric": 0,
-					"coconut": 0,
-					"african_palm": 0,
-					"grass": 115.17
-				}
-			}
-		},
-		{
-			"id": "DO-05",
-			"name": "Dajabón",
-			"soil": { "use": { "agrp": 582.0, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 28,
-					"temp_min": 19,
-					"temp_max": 33,
-					"precipitations": 0
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 415.55,
-				"intensive_cultive": 0,
-				"production": {
-					"rice": 20.68,
-					"cocoa": 0,
-					"coffee": 70.58,
-					"cane": 0,
-					"citric": 0,
-					"coconut": 0,
-					"african_palm": 0,
-					"grass": 0.63
-				}
-			}
-		},
-		{
-			"id": "DO-06",
-			"name": "Duarte",
-			"soil": { "use": { "agrp": 1232.6, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 32,
-					"temp_min": 19,
-					"temp_max": 32,
-					"precipitations": 2313.0
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 54.89,
-				"intensive_cultive": 317.82,
-				"production": {
-					"rice": 257.74,
-					"cocoa": 349.36,
-					"coffee": 0.22,
-					"cane": 5.72,
-					"citric": 0,
-					"coconut": 7.25,
-					"african_palm": 0.03,
-					"grass": 197.15
-				}
-			}
-		},
-		{
-			"id": "DO-07",
-			"name": "Elías Piña",
-			"soil": { "use": { "agrp": 724.2, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 27,
-					"temp_min": 16,
-					"temp_max": 30,
-					"precipitations": 0
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 441.37,
-				"intensive_cultive": 25.52,
-				"production": {
-					"rice": 0.3,
-					"cocoa": 0,
-					"coffee": 95.73,
-					"cane": 0,
-					"citric": 0,
-					"coconut": 0,
-					"african_palm": 0,
-					"grass": 31.03
-				}
-			}
-		},
-		{
-			"id": "DO-08",
-			"name": "El Seibo",
-			"soil": { "use": { "agrp": 1516.3, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 28,
-					"temp_min": 19,
-					"temp_max": 28,
-					"precipitations": 0
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 87.54,
-				"intensive_cultive": 7.45,
-				"production": {
-					"rice": 13.53,
-					"cocoa": 333.44,
-					"coffee": 0.14,
-					"cane": 408.17,
-					"citric": 0,
-					"coconut": 14.57,
-					"african_palm": 5.4,
-					"grass": 284.56
-				}
-			}
-		},
-		{
-			"id": "DO-09",
-			"name": "Espaillat",
-			"soil": { "use": { "agrp": 548.8, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 27,
-					"temp_min": 18,
-					"temp_max": 31,
-					"precipitations": 0
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 99.16,
-				"intensive_cultive": 162.96,
-				"production": {
-					"rice": 0.4,
-					"cocoa": 91.93,
-					"coffee": 28.32,
-					"cane": 0.41,
-					"citric": 0,
-					"coconut": 2.26,
-					"african_palm": 0,
-					"grass": 104.57
-				}
-			}
-		},
-		{
-			"id": "DO-10",
-			"name": "Independencia",
-			"soil": { "use": { "agrp": 470.3, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 30,
-					"temp_min": 18,
-					"temp_max": 31,
-					"precipitations": 0
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 225.62,
-				"intensive_cultive": 35.97,
-				"production": {
-					"rice": 0.1,
-					"cocoa": 0,
-					"coffee": 45.7,
-					"cane": 38.64,
-					"citric": 0,
-					"coconut": 0,
-					"african_palm": 0,
-					"grass": 10.85
-				}
-			}
-		},
-		{
-			"id": "DO-11",
-			"name": "La Altagracia",
-			"soil": { "use": { "agrp": 2070.7, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 29,
-					"temp_min": 24,
-					"temp_max": 29,
-					"precipitations": 1512
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 5.67,
-				"intensive_cultive": 16.7,
-				"production": {
-					"rice": 14.6,
-					"cocoa": 359.59,
-					"coffee": 0,
-					"cane": 326.42,
-					"citric": 0,
-					"coconut": 11.96,
-					"african_palm": 0.3,
-					"grass": 616.86
-				}
-			}
-		},
-		{
-			"id": "DO-12",
-			"name": "La Romana",
-			"soil": { "use": { "agrp": 391.5, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 29,
-					"temp_min": 22,
-					"temp_max": 30,
-					"precipitations": 1633.8
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 37.72,
-				"intensive_cultive": 3.2,
-				"production": {
-					"rice": 0.03,
-					"cocoa": 3.03,
-					"coffee": 0.02,
-					"cane": 233.33,
-					"citric": 0,
-					"coconut": 2.11,
-					"african_palm": 0.16,
-					"grass": 93.07
-				}
-			}
-		},
-		{
-			"id": "DO-13",
-			"name": "La Vega",
-			"soil": { "use": { "agrp": 984.5, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 28,
-					"temp_min": 17,
-					"temp_max": 32,
-					"precipitations": 978.6
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 315.51,
-				"intensive_cultive": 117.74,
-				"production": {
-					"rice": 165.98,
-					"cocoa": 3.32,
-					"coffee": 131.42,
-					"cane": 0,
-					"citric": 0,
-					"coconut": 0.1,
-					"african_palm": 0.01,
-					"grass": 98.01
-				}
-			}
-		},
-		{
-			"id": "DO-14",
-			"name": "María Trinidad Sánchez",
-			"soil": { "use": { "agrp": 959.8, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 31,
-					"temp_min": 22,
-					"temp_max": 31,
-					"precipitations": 0
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 34.75,
-				"intensive_cultive": 206.8,
-				"production": {
-					"rice": 146.28,
-					"cocoa": 126.12,
-					"coffee": 0.03,
-					"cane": 0.21,
-					"citric": 0,
-					"coconut": 51.11,
-					"african_palm": 0.37,
-					"grass": 355.97
-				}
-			}
-		},
-		{
-			"id": "DO-15",
-			"name": "Monte Cristi",
-			"soil": { "use": { "agrp": 896.4, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 30,
-					"temp_min": 24,
-					"temp_max": 31,
-					"precipitations": 424.1
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 216.25,
-				"intensive_cultive": 371.57,
-				"production": {
-					"rice": 371.45,
-					"cocoa": 0,
-					"coffee": 4.62,
-					"cane": 0,
-					"citric": 0,
-					"coconut": 0,
-					"african_palm": 0,
-					"grass": 58.51
-				}
-			}
-		},
-		{
-			"id": "DO-16",
-			"name": "Pedernales",
-			"soil": { "use": { "agrp": 258.2, "mine": 1.7 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 27,
-					"temp_min": 24,
-					"temp_max": 30,
-					"precipitations": 0
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 169.91,
-				"intensive_cultive": 61.47,
-				"production": {
-					"rice": 0.25,
-					"cocoa": 0.01,
-					"coffee": 36.4,
-					"cane": 0,
-					"citric": 0,
-					"coconut": 0,
-					"african_palm": 0,
-					"grass": 60.02
-				}
-			}
-		},
-		{
-			"id": "DO-17",
-			"name": "Peravia",
-			"soil": { "use": { "agrp": 291.7, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 28,
-					"temp_min": 23,
-					"temp_max": 29,
-					"precipitations": 0
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 93.27,
-				"intensive_cultive": 192.57,
-				"production": {
-					"rice": 0.03,
-					"cocoa": 68.75,
-					"coffee": 0.01,
-					"cane": 32.48,
-					"citric": 0,
-					"coconut": 1.47,
-					"african_palm": 13.66,
-					"grass": 16.53
-				}
-			}
-		},
-		{
-			"id": "DO-18",
-			"name": "Puerto Plata",
-			"soil": { "use": { "agrp": 1083.2, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 30,
-					"temp_min": 21,
-					"temp_max": 30,
-					"precipitations": 1719.2
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 283.66,
-				"intensive_cultive": 74.23,
-				"production": {
-					"rice": 0,
-					"cocoa": 219.8,
-					"coffee": 66.44,
-					"cane": 67.88,
-					"citric": 0,
-					"coconut": 0,
-					"african_palm": 0,
-					"grass": 231.55
-				}
-			}
-		},
-		{
-			"id": "DO-19",
-			"name": "Hermanas Mirabal",
-			"soil": { "use": { "agrp": 272.6, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 30,
-					"temp_min": 22,
-					"temp_max": 32,
-					"precipitations": 2100.3
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 43.5,
-				"intensive_cultive": 126.73,
-				"production": {
-					"rice": 3.88,
-					"cocoa": 62.5,
-					"coffee": 0,
-					"cane": 0.16,
-					"citric": 0,
-					"coconut": 0.04,
-					"african_palm": 0,
-					"grass": 21.7
-				}
-			}
-		},
-		{
-			"id": "DO-20",
-			"name": "Samaná",
-			"soil": { "use": { "agrp": 525.0, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 30,
-					"temp_min": 22,
-					"temp_max": 31,
-					"precipitations": 2082.8
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 35.62,
-				"intensive_cultive": 87.85,
-				"production": {
-					"rice": 7.99,
-					"cocoa": 50.69,
-					"coffee": 20.67,
-					"cane": 0.28,
-					"citric": 0,
-					"coconut": 91.94,
-					"african_palm": 0.57,
-					"grass": 37.7
-				}
-			}
-		},
-		{
-			"id": "DO-21",
-			"name": "San Cristóbal",
-			"soil": { "use": { "agrp": 617.6, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 30,
-					"temp_min": 21,
-					"temp_max": 30,
-					"precipitations": 0
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 21.4,
-				"intensive_cultive": 50.17,
-				"production": {
-					"rice": 0,
-					"cocoa": 185.69,
-					"coffee": 0.01,
-					"cane": 69.64,
-					"citric": 87.69,
-					"coconut": 2.39,
-					"african_palm": 6.4,
-					"grass": 143.8
-				}
-			}
-		},
-		{
-			"id": "DO-22",
-			"name": "San Juan",
-			"soil": { "use": { "agrp": 1415.0, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 26,
-					"temp_min": 17,
-					"temp_max": 29,
-					"precipitations": 0
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 876.19,
-				"intensive_cultive": 234.57,
-				"production": {
-					"rice": 1.01,
-					"cocoa": 0,
-					"coffee": 85.39,
-					"cane": 0,
-					"citric": 0,
-					"coconut": 0,
-					"african_palm": 0,
-					"grass": 29.69
-				}
-			}
-		},
-		{
-			"id": "DO-23",
-			"name": "San Pedro de Macorís",
-			"soil": { "use": { "agrp": 916.6, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 29,
-					"temp_min": 22,
-					"temp_max": 30,
-					"precipitations": 0
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 58.48,
-				"intensive_cultive": 0.41,
-				"production": {
-					"rice": 0,
-					"cocoa": 4.46,
-					"coffee": 0,
-					"cane": 821.41,
-					"citric": 0,
-					"coconut": 4.49,
-					"african_palm": 0.22,
-					"grass": 100.02
-				}
-			}
-		},
-		{
-			"id": "DO-24",
-			"name": "Sánchez Ramírez",
-			"soil": { "use": { "agrp": 794.1, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 33,
-					"temp_min": 18,
-					"temp_max": 33,
-					"precipitations": 0
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 5.63,
-				"intensive_cultive": 86.13,
-				"production": {
-					"rice": 83.82,
-					"cocoa": 155.55,
-					"coffee": 0.04,
-					"cane": 33.3,
-					"citric": 0,
-					"coconut": 1.82,
-					"african_palm": 0.68,
-					"grass": 319.21
-				}
-			}
-		},
-		{
-			"id": "DO-25",
-			"name": "Santiago",
-			"soil": { "use": { "agrp": 969.9, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 30,
-					"temp_min": 19,
-					"temp_max": 31,
-					"precipitations": 1353.1
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 81.31,
-				"intensive_cultive": 161.06,
-				"production": {
-					"rice": 149.13,
-					"cocoa": 16.5,
-					"coffee": 239.54,
-					"cane": 0,
-					"citric": 0.09,
-					"coconut": 0,
-					"african_palm": 0,
-					"grass": 471.47
-				}
-			}
-		},
-		{
-			"id": "DO-26",
-			"name": "Santiago Rodríguez",
-			"soil": { "use": { "agrp": 396.3, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 31,
-					"temp_min": 19,
-					"temp_max": 34,
-					"precipitations": 0
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 312.67,
-				"intensive_cultive": 0,
-				"production": {
-					"rice": 0.08,
-					"cocoa": 0,
-					"coffee": 40.63,
-					"cane": 0,
-					"citric": 0,
-					"coconut": 0,
-					"african_palm": 0,
-					"grass": 57.71
-				}
-			}
-		},
-		{
-			"id": "DO-27",
-			"name": "Valverde",
-			"soil": { "use": { "agrp": 494.2, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 32,
-					"temp_min": 20,
-					"temp_max": 34,
-					"precipitations": 0
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 71.65,
-				"intensive_cultive": 72.98,
-				"production": {
-					"rice": 333.81,
-					"cocoa": 3.49,
-					"coffee": 14.6,
-					"cane": 0,
-					"citric": 0,
-					"coconut": 0,
-					"african_palm": 0,
-					"grass": 14.08
-				}
-			}
-		},
-		{
-			"id": "DO-28",
-			"name": "Monseñor Nouel",
-			"soil": { "use": { "agrp": 348.6, "mine": 5.6 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 20,
-					"temp_min": 16,
-					"temp_max": 30,
-					"precipitations": 0
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 59.68,
-				"intensive_cultive": 57.55,
-				"production": {
-					"rice": 97.28,
-					"cocoa": 20.64,
-					"coffee": 59.74,
-					"cane": 0.03,
-					"citric": 0.01,
-					"coconut": 0.32,
-					"african_palm": 1.18,
-					"grass": 42.23
-				}
-			}
-		},
-		{
-			"id": "DO-29",
-			"name": "Monte Plata",
-			"soil": { "use": { "agrp": 1744.3, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 26,
-					"temp_min": 20,
-					"temp_max": 30,
-					"precipitations": 0
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 80.58,
-				"intensive_cultive": 39.45,
-				"production": {
-					"rice": 15.36,
-					"cocoa": 126.09,
-					"coffee": 0.07,
-					"cane": 950.02,
-					"citric": 0,
-					"coconut": 7.14,
-					"african_palm": 59.67,
-					"grass": 283.49
-				}
-			}
-		},
-		{
-			"id": "DO-30",
-			"name": "Hato Mayor",
-			"soil": { "use": { "agrp": 807.5, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 22,
-					"temp_min": 20,
-					"temp_max": 29,
-					"precipitations": 2520.4
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 56.62,
-				"intensive_cultive": 1.93,
-				"production": {
-					"rice": 9.05,
-					"cocoa": 179.13,
-					"coffee": 0.18,
-					"cane": 251.85,
-					"citric": 0,
-					"coconut": 8,
-					"african_palm": 38.72,
-					"grass": 167.22
-				}
-			}
-		},
-		{
-			"id": "DO-31",
-			"name": "San José de Ocoa",
-			"soil": { "use": { "agrp": 358.4, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 19,
-					"temp_min": 17,
-					"temp_max": 27,
-					"precipitations": 0
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 91.32,
-				"intensive_cultive": 65.17,
-				"production": {
-					"rice": 0.98,
-					"cocoa": 65.24,
-					"coffee": 31.62,
-					"cane": 0,
-					"citric": 0,
-					"coconut": 0.75,
-					"african_palm": 6.7,
-					"grass": 36.77
-				}
-			}
-		},
-		{
-			"id": "DO-32",
-			"name": "Santo Domingo",
-			"soil": { "use": { "agrp": 612.4, "mine": 0 }, "types": 0 },
-			"weather": {
-				"main": {
-					"temp": 26,
-					"temp_min": 20,
-					"temp_max": 31,
-					"precipitations": 2118.8
-				}
-			},
-			"agrop_use": {
-				"mixed_agric": 69.85,
-				"intensive_cultive": 6.2,
-				"production": {
-					"rice": 0.61,
-					"cocoa": 41.18,
-					"coffee": 0.05,
-					"cane": 523.79,
-					"citric": 0,
-					"coconut": 5.29,
-					"african_palm": 3.88,
-					"grass": 79.61
-				}
-			}
-		}
-	]
+  "provincias": [
+    { "id": "DO-01", "name": "Distrito Nacional (Santo Domingo)" },
+    {
+      "id": "DO-02",
+      "name": "Azua",
+      "soil": { "use": { "agrp": 897.3, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 25,
+          "temp_min": 20,
+          "temp_max": 30,
+          "precipitations": 0
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 362.42,
+        "intensive_cultive": 195.62,
+        "production": {
+          "rice": 1.02,
+          "cocoa": 0.93,
+          "coffee": 78.97,
+          "cane": 0.01,
+          "citric": 0,
+          "coconut": 0.01,
+          "african_palm": 0.17,
+          "grass": 26.15
+        }
+      }
+    },
+    {
+      "id": "DO-03",
+      "name": "Baoruco",
+      "soil": { "use": { "agrp": 503.5, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 30,
+          "temp_min": 17,
+          "temp_max": 31,
+          "precipitations": 0
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 275.54,
+        "intensive_cultive": 57.74,
+        "production": {
+          "rice": 0.09,
+          "cocoa": 0,
+          "coffee": 41.98,
+          "cane": 77.14,
+          "citric": 0,
+          "coconut": 0,
+          "african_palm": 0,
+          "grass": 17.26
+        }
+      }
+    },
+    {
+      "id": "DO-04",
+      "name": "Barahona",
+      "soil": { "use": { "agrp": 515.7, "mine": 1.3, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 29,
+          "temp_min": 21,
+          "temp_max": 31,
+          "precipitations": 1280.2
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 244.86,
+        "intensive_cultive": 68.54,
+        "production": {
+          "rice": 0,
+          "cocoa": 0,
+          "coffee": 92.88,
+          "cane": 0,
+          "citric": 0,
+          "coconut": 0,
+          "african_palm": 0,
+          "grass": 115.17
+        }
+      }
+    },
+    {
+      "id": "DO-05",
+      "name": "Dajabón",
+      "soil": { "use": { "agrp": 582.0, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 28,
+          "temp_min": 19,
+          "temp_max": 33,
+          "precipitations": 0
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 415.55,
+        "intensive_cultive": 0,
+        "production": {
+          "rice": 20.68,
+          "cocoa": 0,
+          "coffee": 70.58,
+          "cane": 0,
+          "citric": 0,
+          "coconut": 0,
+          "african_palm": 0,
+          "grass": 0.63
+        }
+      }
+    },
+    {
+      "id": "DO-06",
+      "name": "Duarte",
+      "soil": { "use": { "agrp": 1232.6, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 32,
+          "temp_min": 19,
+          "temp_max": 32,
+          "precipitations": 2313.0
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 54.89,
+        "intensive_cultive": 317.82,
+        "production": {
+          "rice": 257.74,
+          "cocoa": 349.36,
+          "coffee": 0.22,
+          "cane": 5.72,
+          "citric": 0,
+          "coconut": 7.25,
+          "african_palm": 0.03,
+          "grass": 197.15
+        }
+      }
+    },
+    {
+      "id": "DO-07",
+      "name": "Elías Piña",
+      "soil": { "use": { "agrp": 724.2, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 27,
+          "temp_min": 16,
+          "temp_max": 30,
+          "precipitations": 0
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 441.37,
+        "intensive_cultive": 25.52,
+        "production": {
+          "rice": 0.3,
+          "cocoa": 0,
+          "coffee": 95.73,
+          "cane": 0,
+          "citric": 0,
+          "coconut": 0,
+          "african_palm": 0,
+          "grass": 31.03
+        }
+      }
+    },
+    {
+      "id": "DO-08",
+      "name": "El Seibo",
+      "soil": { "use": { "agrp": 1516.3, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 28,
+          "temp_min": 19,
+          "temp_max": 28,
+          "precipitations": 0
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 87.54,
+        "intensive_cultive": 7.45,
+        "production": {
+          "rice": 13.53,
+          "cocoa": 333.44,
+          "coffee": 0.14,
+          "cane": 408.17,
+          "citric": 0,
+          "coconut": 14.57,
+          "african_palm": 5.4,
+          "grass": 284.56
+        }
+      }
+    },
+    {
+      "id": "DO-09",
+      "name": "Espaillat",
+      "soil": { "use": { "agrp": 548.8, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 27,
+          "temp_min": 18,
+          "temp_max": 31,
+          "precipitations": 0
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 99.16,
+        "intensive_cultive": 162.96,
+        "production": {
+          "rice": 0.4,
+          "cocoa": 91.93,
+          "coffee": 28.32,
+          "cane": 0.41,
+          "citric": 0,
+          "coconut": 2.26,
+          "african_palm": 0,
+          "grass": 104.57
+        }
+      }
+    },
+    {
+      "id": "DO-10",
+      "name": "Independencia",
+      "soil": { "use": { "agrp": 470.3, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 30,
+          "temp_min": 18,
+          "temp_max": 31,
+          "precipitations": 0
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 225.62,
+        "intensive_cultive": 35.97,
+        "production": {
+          "rice": 0.1,
+          "cocoa": 0,
+          "coffee": 45.7,
+          "cane": 38.64,
+          "citric": 0,
+          "coconut": 0,
+          "african_palm": 0,
+          "grass": 10.85
+        }
+      }
+    },
+    {
+      "id": "DO-11",
+      "name": "La Altagracia",
+      "soil": { "use": { "agrp": 2070.7, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 29,
+          "temp_min": 24,
+          "temp_max": 29,
+          "precipitations": 1512
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 5.67,
+        "intensive_cultive": 16.7,
+        "production": {
+          "rice": 14.6,
+          "cocoa": 359.59,
+          "coffee": 0,
+          "cane": 326.42,
+          "citric": 0,
+          "coconut": 11.96,
+          "african_palm": 0.3,
+          "grass": 616.86
+        }
+      }
+    },
+    {
+      "id": "DO-12",
+      "name": "La Romana",
+      "soil": { "use": { "agrp": 391.5, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 29,
+          "temp_min": 22,
+          "temp_max": 30,
+          "precipitations": 1633.8
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 37.72,
+        "intensive_cultive": 3.2,
+        "production": {
+          "rice": 0.03,
+          "cocoa": 3.03,
+          "coffee": 0.02,
+          "cane": 233.33,
+          "citric": 0,
+          "coconut": 2.11,
+          "african_palm": 0.16,
+          "grass": 93.07
+        }
+      }
+    },
+    {
+      "id": "DO-13",
+      "name": "La Vega",
+      "soil": { "use": { "agrp": 984.5, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 28,
+          "temp_min": 17,
+          "temp_max": 32,
+          "precipitations": 978.6
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 315.51,
+        "intensive_cultive": 117.74,
+        "production": {
+          "rice": 165.98,
+          "cocoa": 3.32,
+          "coffee": 131.42,
+          "cane": 0,
+          "citric": 0,
+          "coconut": 0.1,
+          "african_palm": 0.01,
+          "grass": 98.01
+        }
+      }
+    },
+    {
+      "id": "DO-14",
+      "name": "María Trinidad Sánchez",
+      "soil": { "use": { "agrp": 959.8, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 31,
+          "temp_min": 22,
+          "temp_max": 31,
+          "precipitations": 0
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 34.75,
+        "intensive_cultive": 206.8,
+        "production": {
+          "rice": 146.28,
+          "cocoa": 126.12,
+          "coffee": 0.03,
+          "cane": 0.21,
+          "citric": 0,
+          "coconut": 51.11,
+          "african_palm": 0.37,
+          "grass": 355.97
+        }
+      }
+    },
+    {
+      "id": "DO-15",
+      "name": "Monte Cristi",
+      "soil": { "use": { "agrp": 896.4, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 30,
+          "temp_min": 24,
+          "temp_max": 31,
+          "precipitations": 424.1
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 216.25,
+        "intensive_cultive": 371.57,
+        "production": {
+          "rice": 371.45,
+          "cocoa": 0,
+          "coffee": 4.62,
+          "cane": 0,
+          "citric": 0,
+          "coconut": 0,
+          "african_palm": 0,
+          "grass": 58.51
+        }
+      }
+    },
+    {
+      "id": "DO-16",
+      "name": "Pedernales",
+      "soil": { "use": { "agrp": 258.2, "mine": 1.7, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 27,
+          "temp_min": 24,
+          "temp_max": 30,
+          "precipitations": 0
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 169.91,
+        "intensive_cultive": 61.47,
+        "production": {
+          "rice": 0.25,
+          "cocoa": 0.01,
+          "coffee": 36.4,
+          "cane": 0,
+          "citric": 0,
+          "coconut": 0,
+          "african_palm": 0,
+          "grass": 60.02
+        }
+      }
+    },
+    {
+      "id": "DO-17",
+      "name": "Peravia",
+      "soil": { "use": { "agrp": 291.7, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 28,
+          "temp_min": 23,
+          "temp_max": 29,
+          "precipitations": 0
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 93.27,
+        "intensive_cultive": 192.57,
+        "production": {
+          "rice": 0.03,
+          "cocoa": 68.75,
+          "coffee": 0.01,
+          "cane": 32.48,
+          "citric": 0,
+          "coconut": 1.47,
+          "african_palm": 13.66,
+          "grass": 16.53
+        }
+      }
+    },
+    {
+      "id": "DO-18",
+      "name": "Puerto Plata",
+      "soil": { "use": { "agrp": 1083.2, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 30,
+          "temp_min": 21,
+          "temp_max": 30,
+          "precipitations": 1719.2
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 283.66,
+        "intensive_cultive": 74.23,
+        "production": {
+          "rice": 0,
+          "cocoa": 219.8,
+          "coffee": 66.44,
+          "cane": 67.88,
+          "citric": 0,
+          "coconut": 0,
+          "african_palm": 0,
+          "grass": 231.55
+        }
+      }
+    },
+    {
+      "id": "DO-19",
+      "name": "Hermanas Mirabal",
+      "soil": { "use": { "agrp": 272.6, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 30,
+          "temp_min": 22,
+          "temp_max": 32,
+          "precipitations": 2100.3
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 43.5,
+        "intensive_cultive": 126.73,
+        "production": {
+          "rice": 3.88,
+          "cocoa": 62.5,
+          "coffee": 0,
+          "cane": 0.16,
+          "citric": 0,
+          "coconut": 0.04,
+          "african_palm": 0,
+          "grass": 21.7
+        }
+      }
+    },
+    {
+      "id": "DO-20",
+      "name": "Samaná",
+      "soil": { "use": { "agrp": 525.0, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 30,
+          "temp_min": 22,
+          "temp_max": 31,
+          "precipitations": 2082.8
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 35.62,
+        "intensive_cultive": 87.85,
+        "production": {
+          "rice": 7.99,
+          "cocoa": 50.69,
+          "coffee": 20.67,
+          "cane": 0.28,
+          "citric": 0,
+          "coconut": 91.94,
+          "african_palm": 0.57,
+          "grass": 37.7
+        }
+      }
+    },
+    {
+      "id": "DO-21",
+      "name": "San Cristóbal",
+      "soil": { "use": { "agrp": 617.6, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 30,
+          "temp_min": 21,
+          "temp_max": 30,
+          "precipitations": 0
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 21.4,
+        "intensive_cultive": 50.17,
+        "production": {
+          "rice": 0,
+          "cocoa": 185.69,
+          "coffee": 0.01,
+          "cane": 69.64,
+          "citric": 87.69,
+          "coconut": 2.39,
+          "african_palm": 6.4,
+          "grass": 143.8
+        }
+      }
+    },
+    {
+      "id": "DO-22",
+      "name": "San Juan",
+      "soil": { "use": { "agrp": 1415.0, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 26,
+          "temp_min": 17,
+          "temp_max": 29,
+          "precipitations": 0
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 876.19,
+        "intensive_cultive": 234.57,
+        "production": {
+          "rice": 1.01,
+          "cocoa": 0,
+          "coffee": 85.39,
+          "cane": 0,
+          "citric": 0,
+          "coconut": 0,
+          "african_palm": 0,
+          "grass": 29.69
+        }
+      }
+    },
+    {
+      "id": "DO-23",
+      "name": "San Pedro de Macorís",
+      "soil": { "use": { "agrp": 916.6, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 29,
+          "temp_min": 22,
+          "temp_max": 30,
+          "precipitations": 0
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 58.48,
+        "intensive_cultive": 0.41,
+        "production": {
+          "rice": 0,
+          "cocoa": 4.46,
+          "coffee": 0,
+          "cane": 821.41,
+          "citric": 0,
+          "coconut": 4.49,
+          "african_palm": 0.22,
+          "grass": 100.02
+        }
+      }
+    },
+    {
+      "id": "DO-24",
+      "name": "Sánchez Ramírez",
+      "soil": { "use": { "agrp": 794.1, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 33,
+          "temp_min": 18,
+          "temp_max": 33,
+          "precipitations": 0
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 5.63,
+        "intensive_cultive": 86.13,
+        "production": {
+          "rice": 83.82,
+          "cocoa": 155.55,
+          "coffee": 0.04,
+          "cane": 33.3,
+          "citric": 0,
+          "coconut": 1.82,
+          "african_palm": 0.68,
+          "grass": 319.21
+        }
+      }
+    },
+    {
+      "id": "DO-25",
+      "name": "Santiago",
+      "soil": { "use": { "agrp": 969.9, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 30,
+          "temp_min": 19,
+          "temp_max": 31,
+          "precipitations": 1353.1
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 81.31,
+        "intensive_cultive": 161.06,
+        "production": {
+          "rice": 149.13,
+          "cocoa": 16.5,
+          "coffee": 239.54,
+          "cane": 0,
+          "citric": 0.09,
+          "coconut": 0,
+          "african_palm": 0,
+          "grass": 471.47
+        }
+      }
+    },
+    {
+      "id": "DO-26",
+      "name": "Santiago Rodríguez",
+      "soil": { "use": { "agrp": 396.3, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 31,
+          "temp_min": 19,
+          "temp_max": 34,
+          "precipitations": 0
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 312.67,
+        "intensive_cultive": 0,
+        "production": {
+          "rice": 0.08,
+          "cocoa": 0,
+          "coffee": 40.63,
+          "cane": 0,
+          "citric": 0,
+          "coconut": 0,
+          "african_palm": 0,
+          "grass": 57.71
+        }
+      }
+    },
+    {
+      "id": "DO-27",
+      "name": "Valverde",
+      "soil": { "use": { "agrp": 494.2, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 32,
+          "temp_min": 20,
+          "temp_max": 34,
+          "precipitations": 0
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 71.65,
+        "intensive_cultive": 72.98,
+        "production": {
+          "rice": 333.81,
+          "cocoa": 3.49,
+          "coffee": 14.6,
+          "cane": 0,
+          "citric": 0,
+          "coconut": 0,
+          "african_palm": 0,
+          "grass": 14.08
+        }
+      }
+    },
+    {
+      "id": "DO-28",
+      "name": "Monseñor Nouel",
+      "soil": { "use": { "agrp": 348.6, "mine": 5.6, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 20,
+          "temp_min": 16,
+          "temp_max": 30,
+          "precipitations": 0
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 59.68,
+        "intensive_cultive": 57.55,
+        "production": {
+          "rice": 97.28,
+          "cocoa": 20.64,
+          "coffee": 59.74,
+          "cane": 0.03,
+          "citric": 0.01,
+          "coconut": 0.32,
+          "african_palm": 1.18,
+          "grass": 42.23
+        }
+      }
+    },
+    {
+      "id": "DO-29",
+      "name": "Monte Plata",
+      "soil": { "use": { "agrp": 1744.3, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 26,
+          "temp_min": 20,
+          "temp_max": 30,
+          "precipitations": 0
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 80.58,
+        "intensive_cultive": 39.45,
+        "production": {
+          "rice": 15.36,
+          "cocoa": 126.09,
+          "coffee": 0.07,
+          "cane": 950.02,
+          "citric": 0,
+          "coconut": 7.14,
+          "african_palm": 59.67,
+          "grass": 283.49
+        }
+      }
+    },
+    {
+      "id": "DO-30",
+      "name": "Hato Mayor",
+      "soil": { "use": { "agrp": 807.5, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 22,
+          "temp_min": 20,
+          "temp_max": 29,
+          "precipitations": 2520.4
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 56.62,
+        "intensive_cultive": 1.93,
+        "production": {
+          "rice": 9.05,
+          "cocoa": 179.13,
+          "coffee": 0.18,
+          "cane": 251.85,
+          "citric": 0,
+          "coconut": 8,
+          "african_palm": 38.72,
+          "grass": 167.22
+        }
+      }
+    },
+    {
+      "id": "DO-31",
+      "name": "San José de Ocoa",
+      "soil": { "use": { "agrp": 358.4, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 19,
+          "temp_min": 17,
+          "temp_max": 27,
+          "precipitations": 0
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 91.32,
+        "intensive_cultive": 65.17,
+        "production": {
+          "rice": 0.98,
+          "cocoa": 65.24,
+          "coffee": 31.62,
+          "cane": 0,
+          "citric": 0,
+          "coconut": 0.75,
+          "african_palm": 6.7,
+          "grass": 36.77
+        }
+      }
+    },
+    {
+      "id": "DO-32",
+      "name": "Santo Domingo",
+      "soil": { "use": { "agrp": 612.4, "mine": 0, "types": 0 } },
+      "weather": {
+        "main": {
+          "temp": 26,
+          "temp_min": 20,
+          "temp_max": 31,
+          "precipitations": 2118.8
+        }
+      },
+      "agrop_use": {
+        "mixed_agric": 69.85,
+        "intensive_cultive": 6.2,
+        "production": {
+          "rice": 0.61,
+          "cocoa": 41.18,
+          "coffee": 0.05,
+          "cane": 523.79,
+          "citric": 0,
+          "coconut": 5.29,
+          "african_palm": 3.88,
+          "grass": 79.61
+        }
+      }
+    }
+  ]
 }
