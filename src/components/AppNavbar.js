@@ -34,7 +34,7 @@ export default class AppNavbar extends Component {
                   <Input type='search' name='search' id='searchInput' placeholder='Search' />
                 </NavItem>
                 <NavItem>
-                  <NavLink href='https://github.com/Xhoria-RB'>Github</NavLink>
+                  <NavLink href='https://github.com/Xhoria-RB/React-Maps'>Github</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
