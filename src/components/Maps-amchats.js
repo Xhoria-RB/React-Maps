@@ -14,110 +14,110 @@ import ProvinceData from './ProvinceData';
 import Parcels from './Parcels.js';
 
 export default class MapsAmchats extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      provinceName    : '',
-      provinceID      : '',
-      provinceWeather : {},
-      provinceSoil    : {},
-      provinceAgrop   : {},
-      _provinceData   : {},
-      isData          : true
-    };
-    this.toggle = this.toggle.bind(this);
-    this.renderData = this.renderData.bind(this);
-  }
+	constructor(props) {
+		super(props);
+		this.state = {
+			provinceName    : '',
+			provinceID      : '',
+			provinceWeather : {},
+			provinceSoil    : {},
+			provinceAgrop   : {},
+			_provinceData   : {},
+			isData          : true
+		};
+		this.toggle = this.toggle.bind(this);
+		this.renderData = this.renderData.bind(this);
+	}
 
-  componentDidMount() {
-    am4core.useTheme(am4themes_dark);
-    am4core.useTheme(am4themes_animated);
+	componentDidMount() {
+		am4core.useTheme(am4themes_dark);
+		am4core.useTheme(am4themes_animated);
 
-    let map = am4core.create('chartdiv', am4maps.MapChart);
-    map.geodata = am4geodata_rd;
-    map.projection = new am4maps.projections.Miller();
+		let map = am4core.create('chartdiv', am4maps.MapChart);
+		map.geodata = am4geodata_rd;
+		map.projection = new am4maps.projections.Miller();
 
-    let polygonSeries = new am4maps.MapPolygonSeries();
-    polygonSeries.useGeodata = true;
-    map.series.push(polygonSeries);
+		let polygonSeries = new am4maps.MapPolygonSeries();
+		polygonSeries.useGeodata = true;
+		map.series.push(polygonSeries);
 
-    polygonSeries.data = data.provincias;
+		polygonSeries.data = data.provincias;
 
-    // Configure series
-    let polygonTemplate = polygonSeries.mapPolygons.template;
-    // polygonTemplate.tooltipText = '{name} Agrp: {soil.use.agrp} Temperatura: {weather.main.temp}';
-    polygonTemplate.tooltipText = '{name} Temperatura: {weather.main.temp} Celcius';
-    polygonTemplate.fill = am4core.color('#757575');
-    polygonTemplate.events.on('hit', (e) => this.getProvinceData(e), this);
+		// Configure series
+		let polygonTemplate = polygonSeries.mapPolygons.template;
+		// polygonTemplate.tooltipText = '{name} Agrp: {soil.use.agrp} Temperatura: {weather.main.temp}';
+		polygonTemplate.tooltipText = '{name} Temperature: {weather.main.temp} Celcius';
+		polygonTemplate.fill = am4core.color('#757575');
+		polygonTemplate.events.on('hit', (e) => this.getProvinceData(e), this);
 
-    // Create hover state and set alternative fill color
-    let hs = polygonTemplate.states.create('hover');
-    hs.properties.fill = am4core.color('#317ef9');
+		// Create hover state and set alternative fill color
+		let hs = polygonTemplate.states.create('hover');
+		hs.properties.fill = am4core.color('#317ef9');
 
-    map.exporting.menu = new am4core.ExportMenu();
-    this.map = map;
-  }
+		map.exporting.menu = new am4core.ExportMenu();
+		this.map = map;
+	}
 
-  getProvinceData(event) {
-    this.setState((prevState) => ({
-      ...prevState,
-      _provinceData   : get(event, 'target._dataItem._dataContext.agrop_use.production', 'No data'),
-      provinceName    : get(event, 'target._dataItem._dataContext.name', 'No name'),
-      provinceSoil    : get(event, 'target._dataItem._dataContext.soil.use', 'No soil data'),
-      provinceWeather : get(event, 'target._dataItem._dataContext.weather.main', 'No weather data'),
-      provinceID      : get(event, 'target._dataItem._dataContext.id', 'No id')
-    }));
-  }
-  toggle() {
-    this.setState((prevState) => ({
-      ...prevState,
-      isData : !this.state.isData
-    }));
-  }
+	getProvinceData(event) {
+		this.setState((prevState) => ({
+			...prevState,
+			_provinceData   : get(event, 'target._dataItem._dataContext.agrop_use.production', 'No data'),
+			provinceName    : get(event, 'target._dataItem._dataContext.name', 'No name'),
+			provinceSoil    : get(event, 'target._dataItem._dataContext.soil.use', 'No soil data'),
+			provinceWeather : get(event, 'target._dataItem._dataContext.weather.main', 'No weather data'),
+			provinceID      : get(event, 'target._dataItem._dataContext.id', 'No id')
+		}));
+	}
+	toggle() {
+		this.setState((prevState) => ({
+			...prevState,
+			isData : !this.state.isData
+		}));
+	}
 
-  renderData({ _provinceData, provinceName, provinceSoil, provinceWeather, provinceID } = this.state) {
-    if (this.state.provinceID === '') {
-      return <h1>Select a province to see the data</h1>;
-    } else {
-      return this.state.isData ? (
-        <ProvinceData name={provinceName} data={_provinceData} weather={provinceWeather} soil={provinceSoil} />
-      ) : (
-        <Parcels id={provinceID} />
-      );
-    }
-  }
+	renderData({ _provinceData, provinceName, provinceSoil, provinceWeather, provinceID } = this.state) {
+		if (this.state.provinceID === '') {
+			return <h1>Select a province to see the data</h1>;
+		} else {
+			return this.state.isData ? (
+				<ProvinceData name={provinceName} data={_provinceData} weather={provinceWeather} soil={provinceSoil} />
+			) : (
+				<Parcels id={provinceID} />
+			);
+		}
+	}
 
-  componentWillUnmount() {
-    if (this.chart) {
-      this.chart.dispose();
-    }
-  }
+	componentWillUnmount() {
+		if (this.chart) {
+			this.chart.dispose();
+		}
+	}
 
-  render() {
-    // polygonTemplate.events.on('hit', this.getProvinceData, this);
-    // {provinceName && (
-    // <ProvinceData name={provinceName} data={_provinceData} weather={provinceWeather} soil={provinceSoil} />
-    // )}
+	render() {
+		// polygonTemplate.events.on('hit', this.getProvinceData, this);
+		// {provinceName && (
+		// <ProvinceData name={provinceName} data={_provinceData} weather={provinceWeather} soil={provinceSoil} />
+		// )}
 
-    // const { _provinceData, provinceName, provinceSoil, provinceWeather, provinceID } = this.state;
-    return (
-      <Container>
-        <h1>Welcome to React-Maps</h1>
-        <p>
-          The dynamic data source of Dominican Republic. This is an final proyect from University in APEC made by
-          Ricardo Bibieca, the data displayed is not and by any means meant to be true or the forms aren't working for
-          real.{' '}
-        </p>
-        <div id='chartdiv' style={{ width: '100%', height: '500px' }} />
-        <Row>
-          <Col sm='12' md={{ size: 6, offset: 3 }}>
-            <Button className='btn btn-large btn-block my-2' color={this.state.btnColor} onClick={this.toggle}>
-              Change
-            </Button>
-          </Col>
-        </Row>
-        <Container className='my-2'>{this.renderData()}</Container>
-      </Container>
-    );
-  }
+		// const { _provinceData, provinceName, provinceSoil, provinceWeather, provinceID } = this.state;
+		return (
+			<Container>
+				<h1>Welcome to React-Maps</h1>
+				<p>
+					The dynamic data source of Dominican Republic. This is an final proyect from University in APEC made by
+					Ricardo Bibieca, the data displayed is not and by any means meant to be true or the forms aren't working for
+					real.{' '}
+				</p>
+				<div id='chartdiv' style={{ width: '100%', height: '500px' }} />
+				<Row>
+					<Col sm='12' md={{ size: 6, offset: 3 }}>
+						<Button className='btn btn-large btn-block my-2' color={this.state.btnColor} onClick={this.toggle}>
+							Change
+						</Button>
+					</Col>
+				</Row>
+				<Container className='my-2'>{this.renderData()}</Container>
+			</Container>
+		);
+	}
 }
